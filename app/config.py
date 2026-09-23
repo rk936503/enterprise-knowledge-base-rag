@@ -24,7 +24,7 @@ class Settings:
     chunk_overlap_tokens: int = int(os.getenv("CHUNK_OVERLAP_TOKENS", "50"))
 
     #Retrieval
-    top_k: int  int(os.getenv("TOP_K", "5"))
+    top_k: int = int(os.getenv("TOP_K", "5"))
 
 @lru_cache
 def get_settings() -> Settings:
