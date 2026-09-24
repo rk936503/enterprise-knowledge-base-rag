@@ -17,7 +17,7 @@ class Settings:
     #LLM provider
     llm_provider: str = os.getenv("LLM_PROVIDER", "anthropic")
     anthropic_api_key: str = os.getenv("ANTHROPIC_API_KEY", "")
-    llm_model: str == os.getenv("LLM_MODEL", "claude-sonnet-4-6")
+    llm_model: str = os.getenv("LLM_MODEL", "claude-sonnet-4-6")
 
     #Chunking
     chunk_size_tokens: int = int(os.getenv("CHUNK_SIZE_TOKENS", "400"))
